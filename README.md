@@ -24,7 +24,7 @@ This will call the function 'libpython-clj-uv.sync/sync-python-setup! on JVM sta
 It will take the python libraries to install from key `:python-deps` (the strings have the same syntax then in `pyproject.toml`, see uv documentation) and installs the python version defined in `:python-version`.
 
 So it basically allows to define a `pyproject.toml` using `python.edn`
-The `python.edn` will be overwritten by each JVM start.
+The `pyproject.toml` will be overwritten by each JVM start.
 
 `libpython-clj` is then guarantied to use the created venv.
 
