@@ -11,7 +11,8 @@ which can be hooked into the startup of `libpython-clj`, by providing a file
     :python-version "3.14.0"
     :python-deps ["polars==1.37.1"]
     :python-executable ".venv/bin/python" ;; in Linux
-    :pre-initialize-fn 'libpython-clj-uv.sync/sync-python-setup!
+    ;; :python-executable ".venv/Script/python ;; in Windows
+    :pre-initialize-fn libpython-clj-uv.sync/sync-python-setup!
 }
 
 ```
